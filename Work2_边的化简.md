@@ -25,7 +25,9 @@ code in [HW2](./HW2/)
 ```c++
 void Mesh::addTriangle(Vertex*, Vertex*, Vertex*): Assertion `edges.find(std::make_pair(c,a)) == edges.end()' failed.
 ```
-**分析**：也就是说这对点已经存在在mesh中了,因此我们要查询涉及到的点是否存在重复的。策略：
+**分析**：也就是说这对点已经存在在mesh中了,因此我们要查询涉及到的点是否存在重复的。
+
+**策略：**
 - 寻找需要修改点的三角形
     - 与被选择的半边三角形相邻的三角形
     - 与被选择的半边的对边三角形相邻的三角形
@@ -120,11 +122,6 @@ int Mesh::getGoodEdge(){
 
 ### 2.2 QEM简化
 #### QEM简化
-考虑一次边收缩，对于两个点，收缩成一个点 $v_1$ , $v_2$ 。定义 $plane(v_i)$ 表示$v_i$对应的那些原始三角面，则我们的优化目标是
-
-$$
-\bar{v}=\underset{v}{\arg \min } \sum_{p \in {plane}\left(v_{1}\right) \cup \text { Ulane }\left(v_{2}\right)} {distance}(v, p)^{2}
-$$
 
 记 $v=[x,y,z,1]^T$, $p=[a,b,c,d]^T$ ，可得:
 
@@ -137,7 +134,6 @@ $$
 记 $v=[x,y,z,1]^T$, $p=[a,b,c,d]^T$ ，可得:
 
 $$
-{distance}(v, p)^{2}=\left(v^{T} p\right)^{2}=v^{T} p p^{T} v=v^{T} K_{p} v
 {distance}(v, p)^{2}=\left(v^{T} p\right)^{2}=v^{T} p p^{T} v=v^{T} K_{p} v
 $$
 

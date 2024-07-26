@@ -37,7 +37,7 @@ Provot在文章中说到，角落的弹簧会拉伸得太大。因此引入对�
 
 **调整策略：**
 
-![](./pics/HW3/4.PNG)
+![./pics/HW3/4.png](./pics/HW3/4.png)
 
 **效果：**
 
@@ -115,7 +115,7 @@ provot_original、provot_correct_structural、provot_correct_structural_and_shea
 
 四阶Runge-Kutta格式如下：
 
-![pics/HW3/12.PNG](./pics/HW3/12.PNG)
+![./pics/HW3/12.png](./pics/HW3/12.png)
 
 具体来说，按照公式完成四部分计算，最终完成更新。四部分计算分别是1/6、1/3、1/3、1/6，最终再整合在一起。
 
