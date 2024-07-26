@@ -1,0 +1,11 @@
+ifs.exe通过命令行调用：
+	如生成sierpinski_triangle，执行命令"ifs.exe -input sierpinski_triangle.txt -points 10000 -iters 30 -size 200"
+	如生成dragon，执行命令"ifs.exe -input dragon.txt -points 10000 -iters 30 -size 200
+	如生成fern执行命令"ifs.exe -input fern.txt -points 10000 -iters 30 -size 200"
+	如生成giant_x执行命令"ifs.exe -input giant_x.txt -points 10000 -iters 30 -size 200"
+	如生成cube的点，执行命令"ifs.exe -input cube.txt -points 10000 -iters 30 -size 200"
+	如生成cube，执行命令"ifs.exe -input cube.txt -points 10000 -iters 3 -size 200 -cubes"
+	如生成随机颜色的cube，执行命令"ifs.exe -input cube.txt -points 10000 -iters 3 -size 200 -cubes -color"
+
+
+point_cube、point_dragon.exe、point_fern.exe、point_gaint_x.exe、cube.exe、cube_color.exe已经内置参数，可以直接双击运行
